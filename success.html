@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're In! - PayCheck Shield</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .success-container {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1E1E1E 0%, #2D2D2D 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            color: white;
+        }
+        
+        .success-content {
+            text-align: center;
+            max-width: 700px;
+        }
+        
+        .success-icon {
+            width: 120px;
+            height: 120px;
+            background: #00C805;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            margin: 0 auto 40px;
+            animation: scaleIn 0.5s ease;
+        }
+        
+        @keyframes scaleIn {
+            0% { transform: scale(0); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .success-content h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 30px;
+            letter-spacing: -1px;
+        }
+        
+        .success-content p {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        
+        .success-highlight {
+            background: rgba(0, 200, 5, 0.2);
+            border: 2px solid #00C805;
+            border-radius: 12px;
+            padding: 40px;
+            margin: 50px 0;
+        }
+        
+        .success-highlight strong {
+            display: block;
+            font-size: 2rem;
+            color: #00C805;
+            margin-bottom: 15px;
+        }
+        
+        .success-highlight p {
+            font-size: 1.1rem;
+        }
+        
+        .share-section {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .share-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .share-section p {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 15px 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: #00C805;
+        }
+        
+        @media (max-width: 768px) {
+            .success-icon {
+                width: 100px;
+                height: 100px;
+                font-size: 3rem;
+            }
+            
+            .success-content h1 {
+                font-size: 2rem;
+            }
+            
+            .success-content p {
+                font-size: 1.1rem;
+            }
+            
+            .success-highlight strong {
+                font-size: 1.5rem;
+            }
+            
+            .success-highlight {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <div class="success-content">
+            <div class="success-icon">✓</div>
+            
+            <h1>You're on the List!</h1>
+            
+            <p>Welcome to PayCheck Shield. You are officially on the waitlist.</p>
+            
+            <div class="success-highlight">
+                <strong>Your Lifetime Price: $1.99/month</strong>
+                <p>As one of our first 100 supporters, you have locked in 50% off for life. We'll send you an email when we launch with exclusive early access.</p>
+            </div>
+            
+            <p>We're building this for workers like you who deserve to know their paycheck is right. Expect to hear from us within the next few weeks.</p>
+            
+            <div class="share-section">
+                <h2>Know someone who needs this?</h2>
+                <p>Share PayCheck Shield with coworkers who might be getting shorted too. The more people who join, the faster we can launch.</p>
+            </div>
+            
+            <a href="index.html" class="back-link">← Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
